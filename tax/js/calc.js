@@ -10,6 +10,6 @@ function give() {
 }
 
 function recive() {
-  result.value = "You need " + Math.round((qS.value * 10) / 7) + " to " + qS.value;
-  resultp.value = "You need " + Math.round((qS.value * 10) / 6) + " to " + qS.value + " in Pls Donate";
+  result.value = "You need " + Math.round((qS.value * 10) / 7);
+  resultp.value = "You need " + Math.round((qS.value * 10) / 6) + " in Pls Donate";
 }
