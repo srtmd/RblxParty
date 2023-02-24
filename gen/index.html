@@ -30,15 +30,6 @@
     <img src="assets/home.png" height="25" alt="">
     </a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link link-light" href="https://rblx.party/tax">Tax Calc</a>
-  </li>
-  <li class="nav-item active">
-    <a class="nav-link link-light" href="">User Gen</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link link-light" href="https://www.roblox.com/groups/17047658" target="_blank">Group</a>
-  </li>
   </ul>
 </div>
 
@@ -46,8 +37,8 @@
   <div class="caption">
     <form class="d-block justify-content-center align-items-center" style="width:300px">
   <div class="form-group">
-    <a class="text-white text-decoration-none">Length (min 5 max 20)</a>
-    <input type="text" class="form-control" id="le" placeholder="5" value="5" min="5" max="20">
+    <a id="sl" class="text-white text-decoration-none">Length (min 5 max 20)</a>
+    <input type="range" class="form-range" value="5" min="5" max="20" id="la">
   </div>
   <div class="form-group">
     <a class="text-white text-decoration-none">Output</a>
@@ -62,9 +53,20 @@
 </div>
 
 </div>
+
+<script>
+var slider = document.getElementById("la");
+var output = document.getElementById("sl");
+output.innerHTML = "Length: " + slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = "Length: " + this.value;
+}
+</script>
+
 <script>  
 function randomString() {  
-  var len = document.querySelector("#le");
+  var len = document.querySelector("#la");
             //define a variable consisting alphabets in small and capital letter  
     var characters = "_abcdefghijklmnopqrstuvwxyz0123456789";  
               
