@@ -37,8 +37,8 @@
   <div class="caption">
     <form class="d-block justify-content-center align-items-center" style="width:300px">
   <div class="form-group">
-    <a class="text-white text-decoration-none">@Username</a>
-    <input type="text" class="form-control" id="le" placeholder="@ez4nx">
+    <a class="text-white text-decoration-none">Username (not displayname)</a>
+    <input type="text" class="form-control" id="le" placeholder="ez4nx">
   </div>
   <div>
     <button type="button" onclick="oDon()" class="p-2 m-2 bg-dark text-white rounded-2 border-0" style="width:130px">Offline Donation</button>
@@ -52,22 +52,24 @@
 <script>  
 function oDon() {
     var val = document.getElementById("le").value;
-    if (val == "" || !val.includes("@")) {
-        alert("put a username first, remember to put the ''@'' before it.");
+    if (val === "") {
+        alert("put a username first.");
     }else{
         var inva = document.getElementById("le");
-        window.open("https://pls-donate.com/" + inva.value, "_blank"); 
+        window.open("https://rblx.party/?donate=" + inva.value, "_blank"); 
     }    
 }  
 </script>
 
 <script>
 function copyLink() {
-    var val = document.getElementById("le").value;
-    if (val == "" || !val.includes("@")) {
-        alert("put a username first, remember to put the ''@'' before it.");
+    var val = document.getElementById("le");
+    if (val.value === "") {
+        alert("put a username first.");
     }else{
-        navigator.clipboard.writeText("https://pls-donate.com/" + val);
+        val.select(); 
+        val.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText("https://rblx.party/?donate=" + val.value);
         alert("Link copied and ready to be shared!");
     }    
 }
