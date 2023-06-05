@@ -1,17 +1,21 @@
 var qS = document.querySelector("#qS");
 var result = document.getElementById('ntax');
-result.value = 0;
 var resultp = document.getElementById('ptax');
-resultp.value = 0;
+var resultt = document.getElementById('nor');
+var generatedlink = document.getElementById('gdl');
 
 function give() {
-  result.value = "You gave " + Math.round((qS.value * 7) / 10);
-  resultp.value = "You gave " + Math.round((qS.value * 6) / 10) + " in Pls Donate";
+    //before
+  resultt.innerHTML = "You would get:";
+  result.innerHTML = Math.round((qS.value * 7) / 10);
+  resultp.innerHTML = "or " + Math.round((qS.value * 6) / 10) + " in Pls Donate";
 }
 
 function recive() {
-  result.value = "You need " + Math.round((qS.value * 10) / 7);
-  resultp.value = "You need " + Math.round((qS.value * 10) / 6) + " in Pls Donate";
+    //after
+  resultt.innerHTML = "You would need:";
+  result.innerHTML = Math.round((qS.value * 10) / 7);
+  resultp.innerHTML = "or " + Math.round((qS.value * 10) / 6) + " in Pls Donate";
 }
  
 function oDon() {
@@ -31,8 +35,9 @@ function copyLink() {
     }else{
         vale.select(); 
         vale.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText("https://rblx.party/?donate=" + vale.value);
-        alert("Link copied and ready to be shared!");
+        generatedlink.innerHTML = "https://rblx.party/?donate=" + vale.value;
+        navigator.clipboard.writeText(generatedlink.innerHTML);
+        alert("Link generated and copied to clipboard!");
     }    
 }
 
