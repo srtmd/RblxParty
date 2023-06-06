@@ -6,17 +6,25 @@ var generatedlink = document.getElementById('gdl');
 var generatedplink = document.getElementById('gdp');
 
 function give() {
-    //before
+    if(qS.value === ""){
+        alert("put a value first.");
+    }else{
+        //before
   resultt.innerHTML = "You would get:";
   result.innerHTML = Math.round((qS.value * 7) / 10);
   resultp.innerHTML = "or " + Math.round((qS.value * 6) / 10) + " in Pls Donate";
+    }
 }
 
 function recive() {
-    //after
+    if(qS.value === ""){
+        alert("put a value first.");
+    }else{
+        //after
   resultt.innerHTML = "You would need:";
   result.innerHTML = Math.round((qS.value * 10) / 7);
   resultp.innerHTML = "or " + Math.round((qS.value * 10) / 6) + " in Pls Donate";
+    }
 }
  
 function oDon() {
