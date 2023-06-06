@@ -29,7 +29,10 @@
           <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="https://fps.rblx.party">Fps Unlocker <span class="badge rounded-pill bg-primary">New</span></a>
+                <a class="nav-link" href="https://fps.rblx.party">Fps Unlocker <span class="badge rounded-pill bg-primary">New!</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.roblox.com/games/12555643606">Our catalog game <span class="badge rounded-pill bg-primary">New!</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://www.roblox.com/groups/17047658">Group</a>
@@ -59,6 +62,9 @@
         <li class="nav-item" role="presentation">
           <a class="nav-link" id="ex-2-tab-3" data-mdb-toggle="pill" href="#offdonate" role="tab" aria-controls="pills-3" aria-selected="false">Offline Pls Donate</a>
         </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="ex-2-tab-3" data-mdb-toggle="pill" href="#profiler" role="tab" aria-controls="pills-4" aria-selected="false">Short Profile url</a>
+        </li>
       </ul>
     </div>
     <!-- Tabs navs -->
@@ -67,6 +73,7 @@
       <div class="tab-pane fade show active" id="taxcalc" role="tabpanel" aria-labelledby="pills-1-tab">
         <form class="d-block justify-content-center align-items-center">
           <div class="form-group">
+            <p>Calculate Robux before and after taxes</p>
             <h4 class="text-white text-decoration-none">Calculate</h4>
             <input type="text" class="form-control" id="qS" placeholder="Robux" value="">
           </div>
@@ -84,6 +91,7 @@
       <div class="tab-pane fade" id="usergen" role="tabpanel" aria-labelledby="pills-2-tab">
         <form class="d-block justify-content-center align-items-center">
           <div class="form-group">
+            <p>Generate a random username</p>
             <h4 id="sl" class="text-white text-decoration-none">Length</h4>
             <input type="range" class="form-range" value="5" min="5" max="20" id="la">
           </div>
@@ -100,6 +108,7 @@
       <div class="tab-pane fade" id="offdonate" role="tabpanel" aria-labelledby="pills-3-tab">
         <form class="d-block justify-content-center align-items-center">
           <div class="form-group">
+            <p>Custom url to your Pls Donate booth</p>
             <h4 class="text-white text-decoration-none">Username (not displayname)</h4>
             <input type="text" class="form-control" id="le" placeholder="nvrxstd">
           </div>
@@ -110,8 +119,57 @@
           </div>
         </form>
       </div>
+      <div class="tab-pane fade" id="profiler" role="tabpanel" aria-labelledby="pills-3-tab">
+        <form class="d-block justify-content-center align-items-center">
+          <div class="form-group">
+            <p>Custom url to your Roblox Profile</p>
+            <h4 class="text-white text-decoration-none">Username (not displayname)</h4>
+            <input type="text" class="form-control" id="lp" placeholder="nvrxstd">
+          </div>
+          <div>
+            <button type="button" onclick="testpLink()" class="p-2 m-2 bg-dark text-white rounded-2 border-0" style="width:130px">Test link</button>
+            <button type="button" onclick="genpLink()" class="p-2 m-2 bg-dark text-white rounded-2 border-0" style="width:130px">Gen link</button>
+            <span class="text-muted text-decoration-none" id="gdp"></span>
+          </div>
+        </form>
+      </div>
     </div>
     <!-- Tabs content-->
+
+    <!-- Test --
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 mb-4">
+                <div class="bg-image hover-overlay ripple shadow-1-strong rounded ripple-surface">
+                  <img src="img/weird.jpg" width="400" class="img-fluid">
+                  <a href="#!">
+                    <div class="mask" style="
+                        background: linear-gradient(
+                          45deg,
+                          rgba(29, 236, 197, 0.5),
+                          rgba(91, 14, 214, 0.5) 100%
+                        );
+                      "></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="bg-image hover-overlay ripple shadow-1-strong rounded ripple-surface">
+                  <img src="img/weird.jpg" width="400" class="img-fluid">
+                  <a href="#!">
+                    <div class="mask" style="
+                        background: linear-gradient(
+                          45deg,
+                          rgba(29, 236, 197, 0.5),
+                          rgba(91, 14, 214, 0.5) 100%
+                        );
+                      "></div>
+                  </a>
+                </div>
+              </div>
+      </div>
+    </div>
+    -- end test -->
     </div>
     <footer class="text-center text-lg-start footer mt-auto py-3 bg-dark">
   <div class="text-center p-3">Made with ❤️ by 

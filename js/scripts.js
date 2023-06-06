@@ -3,6 +3,7 @@ var result = document.getElementById('ntax');
 var resultp = document.getElementById('ptax');
 var resultt = document.getElementById('nor');
 var generatedlink = document.getElementById('gdl');
+var generatedplink = document.getElementById('gdp');
 
 function give() {
     //before
@@ -36,8 +37,31 @@ function copyLink() {
         vale.select(); 
         vale.setSelectionRange(0, 99999);
         generatedlink.innerHTML = "https://rblx.party/?donate=" + vale.value;
-        navigator.clipboard.writeText(generatedlink.innerHTML);
-        alert("Link generated and copied to clipboard!");
+        navigator.clipboard.writeText("https://rblx.party/?donate=" + vale.value);
+        //alert("Link generated and copied to clipboard!");
+    }    
+}
+
+function testpLink() {
+    var vel = document.getElementById('lp').value;
+    if (vel === "") {
+        alert("put a username first.");
+    }else{
+        var inve = document.getElementById('le');
+        window.open("https://rblx.party/?p=" + inve.value, "_blank"); 
+    }    
+}  
+
+function genpLink() {
+    var vala = document.getElementById("lp");
+    if (vala.value === "") {
+        alert("put a username first.");
+    }else{
+        vala.select(); 
+        vala.setSelectionRange(0, 99999);
+        generatedplink.innerHTML = "https://rblx.party/?p=" + vala.value;
+        navigator.clipboard.writeText("https://rblx.party/?p=" + vala.value);
+        //alert("Link generated and copied to clipboard!");
     }    
 }
 
