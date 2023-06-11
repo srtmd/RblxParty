@@ -55,7 +55,7 @@ function testpLink() {
     if (vel === "") {
         alert("put a username first.");
     }else{
-        var inve = document.getElementById('le');
+        var inve = document.getElementById('lp');
         window.open("https://rblx.party/?p=" + inve.value, "_blank"); 
     }    
 }  
