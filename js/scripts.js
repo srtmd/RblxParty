@@ -4,6 +4,7 @@ var resultp = document.getElementById('ptax');
 var resultt = document.getElementById('nor');
 var generatedlink = document.getElementById('gdl');
 var generatedplink = document.getElementById('gdp');
+var generatedplink = document.getElementById('ugdp');
 
 function give() {
     if(qS.value === ""){
@@ -33,7 +34,7 @@ function oDon() {
         alert("put a username first.");
     }else{
         var inva = document.getElementById('le');
-        window.open("https://rblx.party/?donate=" + inva.value, "_blank"); 
+        window.open("https://blx.app/?d=" + inva.value, "_blank"); 
     }    
 }  
 
@@ -44,8 +45,8 @@ function copyLink() {
     }else{
         vale.select(); 
         vale.setSelectionRange(0, 99999);
-        generatedlink.innerHTML = "https://rblx.party/?donate=" + vale.value;
-        navigator.clipboard.writeText("https://rblx.party/?donate=" + vale.value);
+        generatedlink.innerHTML = "https://blx.app/?d=" + vale.value;
+        navigator.clipboard.writeText("https://blx.app/?d=" + vale.value);
         //alert("Link generated and copied to clipboard!");
     }    
 }
@@ -56,7 +57,7 @@ function testpLink() {
         alert("put a username first.");
     }else{
         var inve = document.getElementById('lp');
-        window.open("https://rblx.party/?p=" + inve.value, "_blank"); 
+        window.open("https://blx.app/?p=" + inve.value, "_blank"); 
     }    
 }  
 
@@ -67,8 +68,31 @@ function genpLink() {
     }else{
         vala.select(); 
         vala.setSelectionRange(0, 99999);
-        generatedplink.innerHTML = "https://rblx.party/?p=" + vala.value;
-        navigator.clipboard.writeText("https://rblx.party/?p=" + vala.value);
+        generatedplink.innerHTML = "https://blx.app/?p=" + vala.value;
+        navigator.clipboard.writeText("https://blx.app/?p=" + vala.value);
+        //alert("Link generated and copied to clipboard!");
+    }    
+}
+
+function testuLink() {
+    var vel = document.getElementById('up').value;
+    if (vel === "") {
+        alert("put a username first.");
+    }else{
+        var inve = document.getElementById('up');
+        window.open("https://ugc.blx.app/" + inve.value, "_blank"); 
+    }    
+}  
+
+function genuLink() {
+    var vala = document.getElementById("up");
+    if (vala.value === "") {
+        alert("put a username first.");
+    }else{
+        vala.select(); 
+        vala.setSelectionRange(0, 99999);
+        generatedplink.innerHTML = "https://ugc.blx.app/" + vala.value;
+        navigator.clipboard.writeText("https://ugc.blx.app/" + vala.value);
         //alert("Link generated and copied to clipboard!");
     }    
 }

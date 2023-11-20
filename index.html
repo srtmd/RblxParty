@@ -2,27 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>RblxParty</title>
-    <meta name="title" content="RblxParty">
-    <meta property="og:title" content="RblxParty - Web Roblox Tools"/>
+    <title>BLX.APP</title>
+    <meta name="title" content="BLX.APP">
+    <meta property="og:title" content="BLX.APP - Web Roblox Tools"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RblxParty - Web Roblox Tools, Robux Tax Calculator, Username generator & more!">
-    <meta property="og:description" content="RblxParty - Web Roblox Tools, Robux Tax Calculator, Username generator & more!">
+    <meta name="description" content="BLX.APP - Web Roblox Tools, Robux Tax Calculator, Username generator & more!">
+    <meta property="og:description" content="BLX.APP - Web Roblox Tools, Robux Tax Calculator, Username generator & more!">
     <meta name="keywords" content="robux tax calculator, calculator, after tax, before tax, robux, roblox free robux, robux generator, roblox limited, roblox hack, cheat, synapse x, pls donate, calculate how much robux you will receive after tax">
-    <meta property="og:image" content="img/logo.png"/>
+    <meta property="og:image" content="img/icon.png"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="icon" href="img/logo.png" type="image/jpg">
+    <link rel="icon" href="img/icon.png" type="image/jpg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <link rel="stylesheet" href="css/mdb.dark.min.css" />
+    <link rel="stylesheet" href="css/lumen.css" />
     <script src="js/donate.js"></script>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="">
-            <img src="img/home.png" alt="" height="25">
+            <img src="img/logo2.png" alt="" height="40">
           </a>
           <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
@@ -32,21 +33,21 @@
           <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="https://www.roblox.com/games/12555643606">Our catalog game <span class="badge rounded-pill bg-primary">New!</span></a>
+                <a class="nav-link" href="https://www.roblox.com/games/15309302802" target="_blank"> Catalog game </a>
               </li>
+              <!--li class="nav-item">
+                <a class="nav-link" href="https://www.roblox.com/groups/17047658" target="_blank"> Group </a>
+              </li-->
               <li class="nav-item">
-                <a class="nav-link" href="https://www.roblox.com/groups/17047658">Group</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.roblox.com/users/3383075693">Follow me</a>
+                <a class="nav-link" href="https://www.roblox.com/users/3383075693" target="_blank"> Follow me </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <div class="container p-5 text-center">
-        <div class="alert alert-danger" role="alert">We will soon change our name — <a href="https://blx.app" class="alert-link">check it out!</a></div>
-        <h3 class="mb-3">Tools</h3>
+        <!--div class="alert alert-success" role="alert">New Fps Unlocker for Roblox — <a href="https://fps.rblx.party" class="alert-link">check it out!</a></div-->
+        <h3 class="mb-3 text-muted">Tools</h3>
       </div>
     </header>
     <!-- Tabs navs -->
@@ -63,8 +64,14 @@
           <a class="nav-link" id="ex-2-tab-3" data-mdb-toggle="pill" href="#offdonate" role="tab" aria-controls="pills-3" aria-selected="false">Offline Pls Donate</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="ex-2-tab-3" data-mdb-toggle="pill" href="#profiler" role="tab" aria-controls="pills-4" aria-selected="false">Short Profile url</a>
+          <a class="nav-link" id="ex-2-tab-4" data-mdb-toggle="pill" href="#profiler" role="tab" aria-controls="pills-4" aria-selected="false">Short Profile url</a>
         </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="ex-2-tab-5" data-mdb-toggle="pill" href="#ugc" role="tab" aria-controls="pills-5" aria-selected="false">Short UGC url</a>
+        </li>
+        <!--li class="nav-item" role="presentation">
+          <a class="nav-link" id="ex-2-tab-6" data-mdb-toggle="pill" href="#ugc" role="tab" aria-controls="pills-6" aria-selected="false">Short UGC url</a>
+        </li-->
       </ul>
     </div>
     <!-- Tabs navs -->
@@ -72,7 +79,7 @@
     <div class="container tab-content text-center" id="ex-2-content" style="width:350px">
       <div class="tab-pane fade show active" id="taxcalc" role="tabpanel" aria-labelledby="pills-1-tab">
         <form class="d-block justify-content-center align-items-center">
-          <div class="form-group">
+          <div class="form-group text-muted">
             <p>Calculate Robux before and after taxes</p>
             <h4 class="text-white text-decoration-none">Calculate</h4>
             <input type="text" class="form-control" id="qS" placeholder="Robux" value="">
@@ -90,12 +97,12 @@
       </div>
       <div class="tab-pane fade" id="usergen" role="tabpanel" aria-labelledby="pills-2-tab">
         <form class="d-block justify-content-center align-items-center">
-          <div class="form-group">
+          <div class="form-group text-muted">
             <p>Generate a random username</p>
             <h4 id="sl" class="text-white text-decoration-none">Length</h4>
             <input type="range" class="form-range" value="5" min="5" max="20" id="la">
           </div>
-          <div class="form-group">
+          <div class="form-group text-muted">
             <h4 class="text-white text-decoration-none">Generated name:</h4>
             <input type="text" class="form-control bg-dark" id="ru" placeholder="Username will appear here" readonly>
           </div>
@@ -107,7 +114,7 @@
       </div>
       <div class="tab-pane fade" id="offdonate" role="tabpanel" aria-labelledby="pills-3-tab">
         <form class="d-block justify-content-center align-items-center">
-          <div class="form-group">
+          <div class="form-group text-muted">
             <p>Custom url to your Pls Donate booth</p>
             <h4 class="text-white text-decoration-none">Username (not displayname)</h4>
             <input type="text" class="form-control" id="le" placeholder="nvrxstd">
@@ -121,7 +128,7 @@
       </div>
       <div class="tab-pane fade" id="profiler" role="tabpanel" aria-labelledby="pills-3-tab">
         <form class="d-block justify-content-center align-items-center">
-          <div class="form-group">
+          <div class="form-group text-muted">
             <p>Custom url to your Roblox Profile</p>
             <h4 class="text-white text-decoration-none">Username (not displayname)</h4>
             <input type="text" class="form-control" id="lp" placeholder="nvrxstd">
@@ -130,6 +137,20 @@
             <button type="button" onclick="testpLink()" class="p-2 m-2 bg-dark text-white rounded-2 border-0" style="width:130px">Test link</button>
             <button type="button" onclick="genpLink()" class="p-2 m-2 bg-dark text-white rounded-2 border-0" style="width:130px">Gen link</button>
             <span class="text-muted text-decoration-none" id="gdp"></span>
+          </div>
+        </form>
+      </div>
+      <div class="tab-pane fade" id="ugc" role="tabpanel" aria-labelledby="pills-3-tab">
+        <form class="d-block justify-content-center align-items-center">
+          <div class="form-group text-muted">
+            <p>Custom url to your UGC store</p>
+            <h4 class="text-white text-decoration-none">Username (not displayname)</h4>
+            <input type="text" class="form-control" id="up" placeholder="nvrxstd">
+          </div>
+          <div>
+            <button type="button" onclick="testuLink()" class="p-2 m-2 bg-dark text-white rounded-2 border-0" style="width:130px">Test link</button>
+            <button type="button" onclick="genuLink()" class="p-2 m-2 bg-dark text-white rounded-2 border-0" style="width:130px">Gen link</button>
+            <span class="text-muted text-decoration-none" id="ugdp"></span>
           </div>
         </form>
       </div>
@@ -171,10 +192,10 @@
     </div>
     -- end test -->
     </div>
-    <footer class="text-center text-lg-start footer mt-auto py-3 bg-dark">
+    <footer class="text-center text-lg-start footer mt-auto py-3 text-muted">
   <div class="text-center p-3">Made with ❤️ by 
-    <a class="text-secondary" href="https://www.roblox.com/users/3383075693">nvrxstd</a>
-    <br><span>RblxParty © 2023</span>
+    <a class="text-secondary" href="https://www.roblox.com/users/3383075693" target="_blank">nvrxstd</a>
+    <br><span>BLX.APP © 2023</span>
   </div>
 </footer>
 <script type="text/javascript" src="js/mdb.min.js"></script>

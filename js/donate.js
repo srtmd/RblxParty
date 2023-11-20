@@ -4,8 +4,8 @@ const link3 = "https://www.roblox.com/users/profile?username=";
 const param = window.location.search;
 const urlpa = new URLSearchParams(param);
 //document.getElementById("don").style.display = "none"; 
-if (urlpa.has('donate')) {
-	const usr = urlpa.get('donate');
+if (urlpa.has('d')) {
+	const usr = urlpa.get('d');
 	document.title = usr + " need you!";
 	window.location.replace(link1 + usr + link2);
 }
