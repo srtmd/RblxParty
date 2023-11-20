@@ -4,7 +4,7 @@ var resultp = document.getElementById('ptax');
 var resultt = document.getElementById('nor');
 var generatedlink = document.getElementById('gdl');
 var generatedplink = document.getElementById('gdp');
-var generatedplink = document.getElementById('ugdp');
+var generatedulink = document.getElementById('ugdp');
 
 function give() {
     if(qS.value === ""){
@@ -91,7 +91,7 @@ function genuLink() {
     }else{
         vala.select(); 
         vala.setSelectionRange(0, 99999);
-        generatedplink.innerHTML = "https://ugc.blx.app/" + vala.value;
+        generatedulink.innerHTML = "https://ugc.blx.app/" + vala.value;
         navigator.clipboard.writeText("https://ugc.blx.app/" + vala.value);
         //alert("Link generated and copied to clipboard!");
     }    
